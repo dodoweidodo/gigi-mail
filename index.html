@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gigi Mail — personal mail assistant</title>
+<style>
+  :root { --ink:#16150F; --muted:#6b6a63; --paper:#faf8f3; --line:#e3ded1; --accent:#B8432A; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:4rem 1.5rem 6rem; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.01em; }
+  .tag { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; }
+  ul { padding-left:1.2rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--accent); }
+  .card { border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1.5rem 0; background:#fff; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gigi Mail</h1>
+  <p class="tag">A single-user personal mail assistant. Not a public product.</p>
+
+  <div class="card">
+    <strong>What it is.</strong> A private script running on its owner's own computer. It reads one
+    Gmail account (<code>coolestmcplayer@gmail.com</code>) and one Foxmail account, sorts incoming
+    mail, and writes one short daily summary for that same owner.
+  </div>
+
+  <h2>What it does with Google data</h2>
+  <ul>
+    <li>Reads message metadata and content to classify mail (job applications, marketing, receipts).</li>
+    <li>Applies labels and moves messages out of the inbox according to the owner's own rules.</li>
+    <li>Manages the account's own mail filters, and sends reminder mail to the same account.</li>
+    <li>Optionally reads Calendar / Drive / Contacts / Docs / Sheets to build the same daily summary.</li>
+  </ul>
+
+  <h2>What it never does</h2>
+  <ul>
+    <li>No data leaves the owner's computer except calls to Google's own APIs.</li>
+    <li>Nothing is sold, shared, published or passed to any third party.</li>
+    <li>No other person's account is accessed. There are no other users.</li>
+    <li>No message is ever deleted; changes are limited to labels and inbox placement.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Yingjie Liu — <a href="mailto:hello@yjqwerty.com">hello@yjqwerty.com</a></p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> ·
+    <a href="https://www.yjqwerty.com/">yjqwerty.com</a>
+  </footer>
+</main>
+</body>
+</html>
